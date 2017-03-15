@@ -92,3 +92,11 @@ ENV/
 .~lock.*.csv#
 *.bib.bak
 .$*.bib$
+
+# PyCharm project files
+.idea
+       
+# Eclipse PyDev project files
+.settings
+.project
+.pydevproject
