@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from setuptools import setup
+from setuptools import setup, find_packages
 
 with open('README.rst') as readme_file:
     readme = readme_file.read()
@@ -17,6 +17,8 @@ test_requirements = [
     # TODO: put package test requirements here
 ]
 
+packages = find_packages()
+
 setup(
     name='xraynomenclature',
     version='0.1.0',
@@ -25,9 +27,7 @@ setup(
     author="Hendrix Demers",
     author_email='hendrix.demers@mail.mcgill.ca',
     url='https://github.com/drix00/xraynomenclature',
-    packages=[
-        'xraynomenclature',
-    ],
+    packages=packages,
     package_dir={'xraynomenclature':
                  'xraynomenclature'},
     include_package_data=True,
